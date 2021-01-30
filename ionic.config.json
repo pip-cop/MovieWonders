@@ -1,0 +1,7 @@
+{
+  "name": "MovieWonders",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
