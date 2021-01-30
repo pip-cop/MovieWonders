@@ -12,17 +12,17 @@
         </ion-toolbar>
       </ion-header>
       
-      <ExploreContainer name="hallo tara und tina" />
+      <VideoContainer name="hallo tara und tina" video_id="dMnDkFktGF4" />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import VideoContainer from '@/components/video-container.vue';
 
 export default  {
   name: 'Tab3',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { VideoContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>

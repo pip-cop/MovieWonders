@@ -1,14 +1,19 @@
 <template>
   <div id="container">
     <strong>{{ name }}</strong>
+    <YTPlayer :video_id="video_id" /> 
   </div>
 </template>
 
-<script lang="ts">
+<script>
+import YTPlayer from '@/components/yt-player.vue'; 
+
 export default {
-  name: 'ExploreContainer',
+  name: 'VideoContainer',
+  components: { YTPlayer },
   props: {
-    name: String
+    name: String,
+    video_id: String
   }
 }
 </script>
@@ -26,16 +31,5 @@ export default {
 #container strong {
   font-size: 20px;
   line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }
 </style>
