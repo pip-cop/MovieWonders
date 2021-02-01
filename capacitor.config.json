@@ -1,13 +1,14 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "pro.programmatic.moviewonders",
   "appName": "MovieWonders",
   "bundledWebRuntime": false,
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "webDir": "dist",
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0
     }
   },
-  "cordova": {}
+  "cordova": {},
+  "linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh"
 }
