@@ -1,3 +1,4 @@
+import '@capacitor/core'; // includes cap js bridge. from https://capacitorjs.com/docs/v3/updating/3-0#android
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
