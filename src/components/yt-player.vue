@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { YoutubePlayerWeb } from 'capacitor-youtube-player';
+import { YoutubePlayerWeb, YoutubePlayer } from 'capacitor-youtube-player';
 import { Capacitor } from '@capacitor/core';
 
 export default {
@@ -31,19 +31,24 @@ export default {
         videoId: this.video_id,
         debug: true
       };
-      const result = await YoutubePlayerWeb.initialize(options);
+      const player = await YoutubePlayerWeb.initialize(options);
 
-      result.player.addEventListener('onPlaybackQualityChange', (event) => {
+      player.player.addEventListener('onPlaybackQualityChange', (event) => {
         console.log('playback quality is', event);
       });
 
-      result.player.addEventListener('onStateChange', (event) => {
+      player.player.addEventListener('onStateChange', (event) => {
         console.log('state is', event);
       });
     },
 
     async init_yt_native() {
-      // okay.
+      const options = {
+        width: 640,
+        height: 360,
+        videoId: this.video_id
+      };
+      const player = await YoutubePlayer.initialize(options);
     },
   }
 
