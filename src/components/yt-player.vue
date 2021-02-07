@@ -7,7 +7,6 @@
 <script>
 import { YoutubePlayerWeb } from 'capacitor-youtube-player';
 import { Plugins, Capacitor } from '@capacitor/core';
-import { Capacitor } from '@capacitor/core';
 
 export default {
 
