@@ -39,3 +39,6 @@ ionic cap sync
 
 ionic cap open android
 
+
+
+CAPACITOR_ANDROID_STUDIO_PATH=/opt/android-studio/bin/studio.sh ionic cap open android
