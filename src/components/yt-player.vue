@@ -5,7 +5,8 @@
 </template>
 
 <script>
-import { YoutubePlayerWeb, YoutubePlayer } from 'capacitor-youtube-player';
+import { YoutubePlayerWeb } from 'capacitor-youtube-player';
+import { Plugins, Capacitor } from '@capacitor/core';
 import { Capacitor } from '@capacitor/core';
 
 export default {
@@ -43,6 +44,7 @@ export default {
     },
 
     async init_yt_native() {
+      const { YoutubePlayer } = Plugins;
       const options = {
         width: 640,
         height: 360,
