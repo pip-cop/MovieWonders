@@ -1,4 +1,25 @@
 
+https://photos.google.com/share/AF1QipNlUBB6Mdf9mAlfpxCOxYw2cBm49NuHF187__gETVclQtDBGbr4oWrnkPd9Mtwuog?key=VEdGbW5qR0VjR0dkREFZUTRCcGUwQ1Fmb0NJNWJB
+https://developers.google.com/youtube/v3/docs/playlistItems/list
+https://developers.google.com/youtube/v3/docs/playlistItems/list?apix_params=%7B%22part%22%3A%5B%22contentDetails%22%5D%2C%22playlistId%22%3A%22PLc6UWFdYNlhOSPixucdCDcS73Ey7i5cA3%22%7D#usage
+
+
+YOUTUBE_API_KEY="AIzaSyBogyy2xbK_VARlmcCiDrkYu5en6Iv97UI"; \
+curl \
+  "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLc6UWFdYNlhOSPixucdCDcS73Ey7i5cA3&key=$YOUTUBE_API_KEY" \
+  --header 'Accept: application/json' \
+  --compressed
+
+
+YOUTUBE_API_KEY="AIzaSyBogyy2xbK_VARlmcCiDrkYu5en6Iv97UI"; \
+curl \
+  "https://youtube.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=PLc6UWFdYNlhOOTEBUDttyDgbi19cbp6Eh&key=$YOUTUBE_API_KEY" \
+  --header 'Accept: application/json' \
+  --compressed
+
+
+
+
 
 yarn add @ionic/cli @capacitor/cli
 yarn add native-run cordova-res
