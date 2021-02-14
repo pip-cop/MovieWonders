@@ -1,12 +1,15 @@
 <template>
   <div id="container">
-    <strong>{{ name }}</strong>
-    <YTPlayer :video_id="video_id" /> 
+    <div v-for="item in videos" :key="item.id">
+      <strong>{{ item.snippet.title }}</strong>
+      <YTPlayer :video_id="item.snippet.resourceId.videoId" />
+    </div>
   </div>
 </template>
 
 <script>
-import YTPlayer from '@/components/yt-player.vue'; 
+import YTPlayer from '@/components/yt-player.vue';
+import { YT_API } from '@/config';
 
 export default {
   name: 'VideoContainer',
@@ -14,7 +17,23 @@ export default {
   props: {
     name: String,
     video_id: String
-  }
+  },
+  data() {
+    return {
+      videos: [],
+    };
+  },
+  methods: {
+    async load() {
+      const response = await fetch(YT_API.playlist_items);
+      const result = await response.json()
+      console.log(result.items);
+      this.videos = result.items;
+    },
+  },
+  created() {
+    this.load();
+  },
 }
 </script>
 
