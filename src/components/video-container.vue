@@ -1,19 +1,18 @@
 <template>
   <div id="container">
+    <h2>The Movie Wonders Wonder Movies</h2>
     <div v-for="item in videos" :key="item.id">
-      <strong>{{ item.snippet.title }}</strong>
-      <YTPlayer :video_id="item.snippet.resourceId.videoId" />
+      <h3>{{ item.snippet.title }}</h3>
+      <iframe width="560" height="315" :src="`https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </template>
 
 <script>
-import YTPlayer from '@/components/yt-player.vue';
 import { YT_API } from '@/config';
 
 export default {
   name: 'VideoContainer',
-  components: { YTPlayer },
   props: {
     name: String,
     video_id: String
@@ -39,12 +38,8 @@ export default {
 
 <style scoped>
 #container {
+  margin: 4em auto;
   text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 #container strong {
