@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>hallo tara und tina</ion-title>
+        <ion-title>Bli bla blo</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
@@ -11,18 +11,16 @@
           <ion-title size="large">hallo tara und tina</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-      <VideoContainer name="hallo tara und tina" video_id="dMnDkFktGF4" />
+      <p>hier steht ein text.</p>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import VideoContainer from '@/components/video-container.vue';
 
 export default  {
   name: 'Tab3',
-  components: { VideoContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 }
 </script>

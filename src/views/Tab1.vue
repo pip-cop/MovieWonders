@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>hallo clara</ion-title>
+        <ion-title>Videos</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
