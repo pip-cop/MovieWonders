@@ -19,6 +19,15 @@ curl \
 
 
 
+https://v3.vuejs.org/guide/list.html#v-for-with-a-range
+https://v3.vuejs.org/guide/composition-api-introduction.html
+https://v3.vuejs.org/guide/component-dynamic-async.html#async-components
+https://v3.vuejs.org/guide/instance.html#lifecycle-hooks
+https://v3.vuejs.org/api/options-lifecycle-hooks.html
+https://v3.vuejs.org/guide/migration/introduction.html
+
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
 
 
 yarn add @ionic/cli @capacitor/cli
