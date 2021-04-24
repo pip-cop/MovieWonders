@@ -1,5 +1,7 @@
 https://ionicons.com/
 
+vscode://vscode.github-authentication/did-authenticate?windowid=1&code=22bf73e046c3b4348ec0&state=f0dae2dc-7c65-4b88-a4cc-a8df6cb8fb9f
+
 
 https://photos.google.com/share/AF1QipNlUBB6Mdf9mAlfpxCOxYw2cBm49NuHF187__gETVclQtDBGbr4oWrnkPd9Mtwuog?key=VEdGbW5qR0VjR0dkREFZUTRCcGUwQ1Fmb0NJNWJB
 https://developers.google.com/youtube/v3/docs/playlistItems/list
@@ -29,7 +31,11 @@ https://v3.vuejs.org/api/options-lifecycle-hooks.html
 https://v3.vuejs.org/guide/migration/introduction.html
 
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+https://stackoverflow.com/questions/13421463/htaccess-access-control-allow-origin
+https://stackoverflow.com/questions/20448339/apache-directory-listing-as-json
 
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
 
 
 yarn add @ionic/cli @capacitor/cli
