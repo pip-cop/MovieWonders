@@ -1,15 +1,17 @@
 <template>
   <div id="container">
     <h2>The Movie Wonders Wonder Movies</h2>
-    <div v-for="item in videos" :key="item.id">
-      <h3>{{ item.snippet.title }}</h3>
-      <iframe width="560" height="315" :src="`https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`" frameborder="0" allowfullscreen></iframe>
+    <div v-for="item in videos" :key="item.title">
+      <h3>{{ item.title }}</h3>
+      <video controls width="560">
+          <source :src="item.url" type="video/mp4">
+      </video>
     </div>
   </div>
 </template>
 
 <script>
-import { YT_API } from '@/config';
+import { MV_API } from '@/config';
 
 export default {
   name: 'VideoContainer',
@@ -24,10 +26,10 @@ export default {
   },
   methods: {
     async load() {
-      const response = await fetch(YT_API.playlist_items);
+      const response = await fetch(MV_API.videos);
       const result = await response.json()
-      console.log(result.items);
-      this.videos = result.items;
+      console.log(result);
+      this.videos = result;
     },
   },
   created() {
