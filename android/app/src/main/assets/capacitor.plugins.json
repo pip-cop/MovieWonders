@@ -10,9 +10,5 @@
 	{
 		"pkg": "@capacitor/keyboard",
 		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
-	},
-	{
-		"pkg": "capacitor-youtube-player",
-		"classpath": "com.abpjap.plugin.youtubeplayer.YoutubePlayer"
 	}
 ]

@@ -880,11 +880,6 @@
   resolved "https://registry.yarnpkg.com/@capacitor/haptics/-/haptics-0.3.1.tgz#326b32af5f3f0eaae20811fbac4a6fd537210f7a"
   integrity sha512-oZFoOteygAbmm3h6EmHsC1oWa8Y8hxibdi0k+/S068yOqryO3QX+1kkJhnTIlW02PUR0eDM3L5mwqT7+fGHncQ==
 
-"@capacitor/ios@^3.0.0-beta.1":
-  version "3.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-3.0.0-beta.1.tgz#d2e6546c42583c627aa2a02ca971cf906601a773"
-  integrity sha512-n1znAOXQ5idqjRfxSN8vF8q2IC1waJbT0cTfSE6/7LKQ/afySGll77v725WzUc1XfsOTEn1+buImNOhzWwMvRA==
-
 "@capacitor/keyboard@^0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@capacitor/keyboard/-/keyboard-0.5.1.tgz#809ba7a15dbf259c4852ccfd85585e2968ba8c05"
@@ -3106,16 +3101,6 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001181:
   version "1.0.30001185"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001185.tgz#3482a407d261da04393e2f0d61eefbc53be43b95"
   integrity sha512-Fpi4kVNtNvJ15H0F6vwmXtb3tukv3Zg3qhKkOGUq7KJ1J6b9kf4dnNgtEAFXhRsJo0gNj9W60+wBvn0JcTvdTg==
-
-capacitor-youtube-player@^1.0.0-alpha.1-58:
-  version "1.0.0-alpha.1-58"
-  resolved "https://registry.yarnpkg.com/capacitor-youtube-player/-/capacitor-youtube-player-1.0.0-alpha.1-58.tgz#57c1b3875dcde411a60478ce9920eb93802dec86"
-  integrity sha512-7CnFbnd3F0VhIKbFtq3Vq4n5Zg6kf5IAiycQDXuLGSQR6bVMdzyVYPh3Xq0DS8JlypCrgyBSVdiBzyi8GDBhUw==
-  dependencies:
-    "@capacitor/android" "^3.0.0-beta.1"
-    "@capacitor/cli" "^3.0.0-beta.1"
-    "@capacitor/core" "^3.0.0-beta.1"
-    "@capacitor/ios" "^3.0.0-beta.1"
 
 capture-exit@^2.0.0:
   version "2.0.0"
