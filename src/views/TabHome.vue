@@ -6,14 +6,9 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Movie Wonders
 
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
       <img src="../assets/mvlogo-o.png"/>
+
     </ion-content>
   </ion-page>
 </template>

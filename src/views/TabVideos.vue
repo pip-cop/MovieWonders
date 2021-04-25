@@ -6,15 +6,9 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">hallo clara
 
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
       <VideoContainer name="hallo clara" video_id="qaZ0oAh4evU" />
+
     </ion-content>
   </ion-page>
 </template>

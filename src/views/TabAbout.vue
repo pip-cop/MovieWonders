@@ -6,13 +6,16 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">hallo elisa und joana</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      
-      <p>Movie Wonders ist eine App von Clara, Tara, Tina, Elisa und Joana.</p>
+
+      <IonCard>
+        <IonCardHeader>
+          <IonCardSubtitle>About this app</IonCardSubtitle>
+          <IonCardTitle>MovieWonders</IonCardTitle>
+        </IonCardHeader>
+        <IonCardContent>
+          Movie Wonders ist eine App von Clara, Tara, Tina, Elisa und Joana.
+        </IonCardContent>
+      </IonCard>
 
     </ion-content>
   </ion-page>
@@ -20,10 +23,11 @@
 
 <script lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonCard, IonCardContent, IonCardSubtitle, IonCardTitle } from '@ionic/vue';
 
 export default  {
   name: 'About',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonCard, IonCardContent, IonCardSubtitle, IonCardTitle },
   data() {
     return {
       name: this.name,
