@@ -80,3 +80,7 @@ ionic cap open android
 
 
 CAPACITOR_ANDROID_STUDIO_PATH=/opt/android-studio/bin/studio.sh ionic cap open android
+
+
+# build for android without android studio
+https://forum.ionicframework.com/t/how-to-build-an-android-apk-file-without-using-android-studio-in-a-capacitor-project/177814/9
