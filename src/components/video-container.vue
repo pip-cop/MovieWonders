@@ -3,7 +3,7 @@
     <h2>The Movie Wonders Wonder Movies</h2>
     <div v-for="item in videos" :key="item.title">
       <h3>{{ item.title }}</h3>
-      <video controls width="560">
+      <video controls>
           <source :src="item.url" type="video/mp4">
       </video>
     </div>
@@ -39,6 +39,11 @@ export default {
 </script>
 
 <style scoped>
+video {
+  width: 90%;
+  height: auto;
+  max-width: 560px;
+}
 #container {
   margin: 4em auto;
   text-align: center;
