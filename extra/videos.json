@@ -1,14 +1,20 @@
 [
   {
     "url": "https://kaum.at/.moviewonders/die-humanimals--2021-04-14.mp4",
-    "title": "Die Humanimals 1"
+    "title": "Die Humanimals 1",
+    "subtitle": "Episode 1",
+    "description": "In the start of the Humanimals series you get introduced to the different characters and the first adventure begins."
   },
   {
     "url": "https://kaum.at/.moviewonders/die-humanimals--2021-04-19.mp4",
-    "title": "Die Humanimals 2"
+    "title": "Die Humanimals 2",
+    "subtitle": "Episode 2",
+    "description": "The second episode features a lot of drama!"
   },
   {
     "url": "https://kaum.at/.moviewonders/die-humanimals--2021-04-19--klein.mp4",
-    "title": "Die Humanimals 2 (kleine Version)"
+    "title": "Die Humanimals 2 (kleine Version)",
+    "subtitle": "Episode 2",
+    "description": "Watch this in case your internet connection is limited."
   }
 ]

@@ -1,20 +1,28 @@
 <template>
   <div id="container">
     <h2>The Movie Wonders Wonder Movies</h2>
-    <div v-for="item in videos" :key="item.title">
-      <h3>{{ item.title }}</h3>
+    <IonCard v-for="item in videos" :key="item.title">
       <video controls>
           <source :src="item.url" type="video/mp4">
       </video>
-    </div>
+      <IonCardHeader>
+        <IonCardSubtitle v-if="item.subtitle">{{ item.subtitle }}</IonCardSubtitle>
+        <IonCardTitle v-if="item.title">{{ item.title }}</IonCardTitle>
+      </IonCardHeader>
+      <IonCardContent v-if="item.description">
+        {{ item.description }}
+      </IonCardContent>
+    </IonCard>
   </div>
 </template>
 
 <script>
 import { MV_API } from '@/config';
+import { IonCard, IonCardContent, IonCardSubtitle, IonCardTitle } from '@ionic/vue';
 
 export default {
   name: 'VideoContainer',
+  components: { IonCard, IonCardContent, IonCardSubtitle, IonCardTitle },
   props: {
     name: String,
     video_id: String
@@ -40,9 +48,8 @@ export default {
 
 <style scoped>
 video {
-  width: 90%;
+  width: 100%;
   height: auto;
-  max-width: 560px;
 }
 #container {
   margin: 4em auto;
