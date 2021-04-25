@@ -7,19 +7,14 @@
           <ion-label>Home</ion-label>
         </ion-tab-button>
 
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
+        <ion-tab-button tab="videos" href="/tabs/videos">
           <ion-icon :icon="aperture" />
           <ion-label>Videos</ion-label>
         </ion-tab-button>
           
-        <ion-tab-button tab="tab2" href="/tabs/tab2">
+        <ion-tab-button tab="about" href="/tabs/about">
           <ion-icon :icon="ellipse" />
           <ion-label>About</ion-label>
-        </ion-tab-button>
-        
-        <ion-tab-button tab="tab3" href="/tabs/tab3">
-          <ion-icon :icon="square" />
-          <ion-label>Bli bla blo</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>

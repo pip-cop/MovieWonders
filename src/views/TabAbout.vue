@@ -2,16 +2,18 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Bli bla blo</ion-title>
+        <ion-title>{{about}}</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">hallo tara und tina</ion-title>
+          <ion-title size="large">hallo elisa und joana</ion-title>
         </ion-toolbar>
       </ion-header>
-      <p>hier steht ein text.</p>
+      
+      <p>Movie Wonders ist eine App von Clara, Tara, Tina, Elisa und Joana.</p>
+
     </ion-content>
   </ion-page>
 </template>
@@ -20,7 +22,12 @@
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 
 export default  {
-  name: 'Tab3',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  name: 'About',
+  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  data() {
+    return {
+      name: this.name,
+    }
+  },
 }
 </script>
